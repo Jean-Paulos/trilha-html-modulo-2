@@ -30,6 +30,14 @@ body {
     padding: 10px;
 }
 
+.menu li.marca {
+    background-color: #b9b8b8;
+}
+
+.menu li.marca a {
+    color: rgb(230, 31, 31);;
+}
+
 .menu a {
     color: #747474;
     text-decoration: none;
@@ -37,7 +45,7 @@ body {
 }
 
 .menu a:hover {
-    color: red;
+    color: rgb(230, 31, 31);
     text-decoration: underline;
 }
 
@@ -51,9 +59,19 @@ body {
 
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     background-color: #cccccc;
     min-height: 150px;
+}
+
+.header img.logo-aux {
+    margin-top: 3%;
+    width: 80px;
+    height: 110px;
+}
+
+.header img#logo {
+    width: 500px;
 }
 
 /* CONTENT */
@@ -83,4 +101,66 @@ body {
     align-items: center;
     background-color: #dfdfdf;
     min-height: 150px;
+}
+
+/* ATENDIMENTO ============= */
+
+.descricao h4 {
+    background-color: #cccccc;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* TABLE  */
+
+table {
+    width: 500px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+table th {
+    background-color: rgb(112, 112, 112);
+    color: #FFF;
+}
+
+table td {
+    background-color: #dbdbdb;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: #FFF;
+}
+
+table tbody tr:hover td {
+    font-weight: bold;
+    background-color: #808080;
+    cursor: pointer;
+}
+
+table tfoot td {
+    color: #FFF;
+    background-color: rgb(112, 112, 112);
+}
+
+/* CONTATO */
+
+form {
+    margin-bottom: 20px;
+}
+
+form p {
+    text-align: center;
+}
+
+form input:hover, textarea:hover {
+    background-color: #cccccc;
+}
+
+form textarea{
+    width: 250px;
+}
+
+form button {
+    cursor: pointer;
 }
